@@ -1,0 +1,17 @@
+[2023-03-02 16:36:15,977] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: get_stocks_dag.TSLA scheduled__2023-02-04T00:00:00+00:00 [queued]>
+[2023-03-02 16:36:15,984] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: get_stocks_dag.TSLA scheduled__2023-02-04T00:00:00+00:00 [queued]>
+[2023-03-02 16:36:15,984] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-02 16:36:15,984] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-02 16:36:15,984] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-02 16:36:15,994] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): TSLA> on 2023-02-04 00:00:00+00:00
+[2023-03-02 16:36:15,997] {standard_task_runner.py:52} INFO - Started process 50850 to run task
+[2023-03-02 16:36:16,000] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'get_stocks_dag', 'TSLA', 'scheduled__2023-02-04T00:00:00+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks.py', '--cfg-path', '/var/folders/8z/6d7zf4153pgfqk4ygy8by4rh0000gn/T/tmp9pi38o4j', '--error-file', '/var/folders/8z/6d7zf4153pgfqk4ygy8by4rh0000gn/T/tmp1zxrihc0']
+[2023-03-02 16:36:16,002] {standard_task_runner.py:80} INFO - Job 40: Subtask TSLA
+[2023-03-02 16:36:18,687] {process_utils.py:125} INFO - Sending Signals.SIGTERM to group 50850. PIDs of all processes in the group: [50850]
+[2023-03-02 16:36:18,687] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 50850
+[2023-03-02 16:36:18,690] {process_utils.py:75} INFO - Process psutil.Process(pid=50850, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='16:36:15') (50850) terminated with exit code Negsignal.SIGTERM
+[2023-03-02 16:37:23,658] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: get_stocks_dag.TSLA scheduled__2023-02-04T00:00:00+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2023-03-02 16:37:23,660] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: get_stocks_dag.TSLA scheduled__2023-02-04T00:00:00+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2023-03-02 16:37:23,675] {local_task_job.py:101} INFO - Task is not able to be run

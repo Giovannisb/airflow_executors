@@ -1,0 +1,2 @@
+[2023-03-02 16:30:02,489] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: get_stocks_dag.MSFT scheduled__2023-01-03T00:00:00+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2023-03-02 16:30:02,499] {local_task_job.py:101} INFO - Task is not able to be run

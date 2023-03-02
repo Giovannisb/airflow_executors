@@ -1,0 +1,46 @@
+[2023-03-02 16:31:38,705] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: get_stocks_dag.TSLA scheduled__2023-02-01T00:00:00+00:00 [queued]>
+[2023-03-02 16:31:38,708] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: get_stocks_dag.TSLA scheduled__2023-02-01T00:00:00+00:00 [queued]>
+[2023-03-02 16:31:38,709] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-02 16:31:38,709] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-02 16:31:38,709] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-02 16:31:38,716] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): TSLA> on 2023-02-01 00:00:00+00:00
+[2023-03-02 16:31:38,718] {standard_task_runner.py:52} INFO - Started process 50279 to run task
+[2023-03-02 16:31:38,723] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'get_stocks_dag', 'TSLA', 'scheduled__2023-02-01T00:00:00+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks.py', '--cfg-path', '/var/folders/8z/6d7zf4153pgfqk4ygy8by4rh0000gn/T/tmpk5uy4e01', '--error-file', '/var/folders/8z/6d7zf4153pgfqk4ygy8by4rh0000gn/T/tmpv4uoc1s7']
+[2023-03-02 16:31:38,725] {standard_task_runner.py:80} INFO - Job 24: Subtask TSLA
+[2023-03-02 16:31:41,147] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: get_stocks_dag.TSLA scheduled__2023-02-01T00:00:00+00:00 [queued]>
+[2023-03-02 16:31:41,159] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: get_stocks_dag.TSLA scheduled__2023-02-01T00:00:00+00:00 [queued]>
+[2023-03-02 16:31:41,159] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-02 16:31:41,159] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-02 16:31:41,159] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-02 16:31:41,174] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): TSLA> on 2023-02-01 00:00:00+00:00
+[2023-03-02 16:31:41,178] {standard_task_runner.py:52} INFO - Started process 50282 to run task
+[2023-03-02 16:31:41,182] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'get_stocks_dag', 'TSLA', 'scheduled__2023-02-01T00:00:00+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks.py', '--cfg-path', '/var/folders/8z/6d7zf4153pgfqk4ygy8by4rh0000gn/T/tmp36rhiyah', '--error-file', '/var/folders/8z/6d7zf4153pgfqk4ygy8by4rh0000gn/T/tmpq_62qymd']
+[2023-03-02 16:31:41,184] {standard_task_runner.py:80} INFO - Job 25: Subtask TSLA
+[2023-03-02 16:31:43,754] {task_command.py:370} INFO - Running <TaskInstance: get_stocks_dag.TSLA scheduled__2023-02-01T00:00:00+00:00 [running]> on host AZ026.local
+[2023-03-02 16:31:46,217] {task_command.py:370} INFO - Running <TaskInstance: get_stocks_dag.TSLA scheduled__2023-02-01T00:00:00+00:00 [running]> on host AZ026.local
+[2023-03-02 16:31:48,819] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_stocks_dag
+AIRFLOW_CTX_TASK_ID=TSLA
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-02-01T00:00:00+00:00
+[2023-03-02 16:31:48,884] {local_task_job.py:156} INFO - Task exited with return code Negsignal.SIGABRT
+[2023-03-02 16:31:48,887] {taskinstance.py:1395} INFO - Marking task as FAILED. dag_id=get_stocks_dag, task_id=TSLA, execution_date=20230201T000000, start_date=20230302T193141, end_date=20230302T193148
+[2023-03-02 16:31:48,893] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-02 16:31:51,282] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_stocks_dag
+AIRFLOW_CTX_TASK_ID=TSLA
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-02-01T00:00:00+00:00
+[2023-03-02 16:31:51,392] {local_task_job.py:156} INFO - Task exited with return code Negsignal.SIGABRT
+[2023-03-02 16:31:51,395] {taskinstance.py:1395} INFO - Marking task as FAILED. dag_id=get_stocks_dag, task_id=TSLA, execution_date=20230201T000000, start_date=20230302T193141, end_date=20230302T193151
+[2023-03-02 16:31:51,402] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-02 16:31:51,405] {dagrun.py:547} ERROR - Marking run <DagRun get_stocks_dag @ 2023-02-01 00:00:00+00:00: scheduled__2023-02-01T00:00:00+00:00, externally triggered: False> failed
+[2023-03-02 16:31:51,405] {dagrun.py:607} INFO - DagRun Finished: dag_id=get_stocks_dag, execution_date=2023-02-01 00:00:00+00:00, run_id=scheduled__2023-02-01T00:00:00+00:00, run_start_date=2023-03-02 19:29:38.240064+00:00, run_end_date=2023-03-02 19:31:51.405275+00:00, run_duration=133.165211, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2023-02-01 00:00:00+00:00, data_interval_end=2023-02-02 00:00:00+00:00, dag_hash=55c79a9c68b03993ee3e55bf15702184

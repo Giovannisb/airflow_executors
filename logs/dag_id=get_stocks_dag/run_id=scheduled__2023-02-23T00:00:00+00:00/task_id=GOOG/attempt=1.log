@@ -1,0 +1,44 @@
+[2023-03-02 16:41:33,512] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: get_stocks_dag.GOOG scheduled__2023-02-23T00:00:00+00:00 [queued]>
+[2023-03-02 16:41:33,521] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: get_stocks_dag.GOOG scheduled__2023-02-23T00:00:00+00:00 [queued]>
+[2023-03-02 16:41:33,521] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-02 16:41:33,521] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-02 16:41:33,521] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-02 16:41:33,534] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): GOOG> on 2023-02-23 00:00:00+00:00
+[2023-03-02 16:41:33,538] {standard_task_runner.py:52} INFO - Started process 51492 to run task
+[2023-03-02 16:41:33,542] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'get_stocks_dag', 'GOOG', 'scheduled__2023-02-23T00:00:00+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks.py', '--cfg-path', '/var/folders/8z/6d7zf4153pgfqk4ygy8by4rh0000gn/T/tmpcih60yu5', '--error-file', '/var/folders/8z/6d7zf4153pgfqk4ygy8by4rh0000gn/T/tmpzg6884kr']
+[2023-03-02 16:41:33,544] {standard_task_runner.py:80} INFO - Job 60: Subtask GOOG
+[2023-03-02 16:41:33,704] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: get_stocks_dag.GOOG scheduled__2023-02-23T00:00:00+00:00 [queued]>
+[2023-03-02 16:41:33,712] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: get_stocks_dag.GOOG scheduled__2023-02-23T00:00:00+00:00 [queued]>
+[2023-03-02 16:41:33,712] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-02 16:41:33,712] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-03-02 16:41:33,712] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-02 16:41:33,724] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): GOOG> on 2023-02-23 00:00:00+00:00
+[2023-03-02 16:41:33,728] {standard_task_runner.py:52} INFO - Started process 51493 to run task
+[2023-03-02 16:41:33,732] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'get_stocks_dag', 'GOOG', 'scheduled__2023-02-23T00:00:00+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/get_stocks.py', '--cfg-path', '/var/folders/8z/6d7zf4153pgfqk4ygy8by4rh0000gn/T/tmp4mhrvo4q', '--error-file', '/var/folders/8z/6d7zf4153pgfqk4ygy8by4rh0000gn/T/tmpjtb0rkcd']
+[2023-03-02 16:41:33,734] {standard_task_runner.py:80} INFO - Job 61: Subtask GOOG
+[2023-03-02 16:41:38,569] {task_command.py:370} INFO - Running <TaskInstance: get_stocks_dag.GOOG scheduled__2023-02-23T00:00:00+00:00 [running]> on host AZ026.local
+[2023-03-02 16:41:38,760] {task_command.py:370} INFO - Running <TaskInstance: get_stocks_dag.GOOG scheduled__2023-02-23T00:00:00+00:00 [running]> on host AZ026.local
+[2023-03-02 16:41:43,629] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_stocks_dag
+AIRFLOW_CTX_TASK_ID=GOOG
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-23T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-02-23T00:00:00+00:00
+[2023-03-02 16:41:43,720] {local_task_job.py:156} INFO - Task exited with return code Negsignal.SIGABRT
+[2023-03-02 16:41:43,724] {taskinstance.py:1395} INFO - Marking task as FAILED. dag_id=get_stocks_dag, task_id=GOOG, execution_date=20230223T000000, start_date=20230302T194133, end_date=20230302T194143
+[2023-03-02 16:41:43,730] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-03-02 16:41:43,792] {taskinstance.py:1569} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_stocks_dag
+AIRFLOW_CTX_TASK_ID=GOOG
+AIRFLOW_CTX_EXECUTION_DATE=2023-02-23T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-02-23T00:00:00+00:00
+[2023-03-02 16:41:43,896] {local_task_job.py:156} INFO - Task exited with return code Negsignal.SIGABRT
+[2023-03-02 16:41:43,899] {taskinstance.py:1395} INFO - Marking task as FAILED. dag_id=get_stocks_dag, task_id=GOOG, execution_date=20230223T000000, start_date=20230302T194133, end_date=20230302T194143
+[2023-03-02 16:41:43,906] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
